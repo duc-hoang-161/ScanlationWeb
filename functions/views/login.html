@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="/" />
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="shortcut icon" href="pic/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		.nf {
+		  position: fixed;
+		  top: 50%;
+		  left: 50%;
+		  /* bring your own prefixes */
+		  transform: translate(-50%, -50%);
+		}
+		.back{
+			color: #eee;
+			border: none;
+			background-color: #7289da;
+			border-radius: 3px;
+			padding: 8px 20px 8px 20px;
+			text-decoration: none;
+			margin: auto;
+			display: block;
+			text-align: center;
+			
+		}
+		input[type=text], input[type=password], select {
+                width: 100%;
+                padding: 6px 10px;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                display: inline-block;
+                border: 1px solid #f4bc42;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+	</style>
+	<script type="text/javascript">
+		function Login(){
+			// redra
+		}
+	</script>
+</head>
+<body>
+	<div class="nf">
+		<form method="post" action="/shield">
+		<div style="color: #fff;">Username <th><input type="text" name="username" id="token-input" ><br></th> </div>
+		<div style="color: #fff;">Password <th><input type="password" name="password" id="token-input" ><br></th> </div>
+		<input type="submit" class="back" value="Đăng nhập">
+		</form>
+	</div>
+</body>
+</html>

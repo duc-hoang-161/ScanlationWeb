@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #36393e;
+	background-image: url("../pic/pattern.png");
+	background-repeat: repeat;
+	font-family: sans-serif;
+	width: 1100px;
+	margin: 0px auto;
+	padding: 0px 50px;
+
+}
+
+#menu ul{
+	display: inline-block;
+	background-color: #202225;
+	text-align: center;
+	list-style-type: none;
+	float: right;
+	padding-right: 10px;
+	padding-left: 30px;
+	border-radius: 5px;
+	margin-top: 30px;
+	-webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 3% 100%, 0% 50%, 3% 0);
+clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 3% 100%, 0% 50%, 3% 0);
+	/*margin-right: 10px;*/
+}
+#menu ul li{
+	float: left;
+	display: inline-block;
+	height: 50px;
+
+	line-height: 50px;
+	margin-left: 20px;
+}
+#menu ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 16px 8px 16px;
+
+}
+#menu ul li a:hover{
+	background-color: #42464d;
+	border-radius: 5px;
+}
+.bann{
+	display: inline;
+	line-height: 50px;
+	height: 30px;
+	float: left;
+	margin-top: 10px;
+}
+
+.content{
+	clear: both;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: block;
+	margin: 0px auto;
+	width: 1000px;
+	height: auto;
+	min-height: 720px;
+
+
+}
+
+
+.container{
+	width: 1000px;
+	margin: 0px auto;
+	display: block;
+	clear: both;
+}
+
+.story-side{
+	width: 500px;
+	/*float: left;*/
+	display: inline-block;
+	position: relative;
+}
+
+.story-side h1{
+	display: block;
+	color: #eee;
+	background-color: #7289da;
+	border-radius: 3px;
+	padding: 8px 0px 8px 20px;
+	
+}
+
+.contact-side{
+	width: 500px;
+	float: right;
+	display: inline-block;
+}
+
+.contact-side h1{
+	color: #eee;
+	background-color: #736c9f;
+	border-radius: 3px;
+	padding: 8px 20px 8px 20px;
+	width: 320px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.discord-widget{
+	width: 320px;
+	margin: 0 auto;
+}
+
+.fb-widget{
+	width: 320px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.dcw{
+	margin-top: 20px;
+}
+
+
+.line{
+	margin-top: 20px;
+}
+
+.line-chap{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #42464d;
+	border-radius: 3px;
+	padding: 15px;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+}
+
+.line-chap:hover{
+	background-color: #484c54;
+}
+
+.chap{
+	display: block;
+}
+
+.name-story{
+	text-decoration: none;
+	color: #7289da;
+	font-size: 15px;
+
+
+}
+
+.numchap{
+	color: #fff;
+	background-color: #355089;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px;
+
+}
+
+
+.title-chap{
+	margin-top: 5px;
+	font-style: italic;
+	font-size: 12px;
+	color: #afb0b2;
+	display: inline;
+}
+
+.up-date{
+	float: right;
+	color: #6b6e78;
+	font-size: 10px;
+	font-style: italic;
+	display: inline-block;
+}
+
+
+.end{
+	display: block;
+	color: #fff;
+	clear: both;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 10px;
+}
+.end a{
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+}
+
+.viewer{
+	background-color: #878b97;
+	margin: 0px auto;
+}
+
+.apic{
+	margin: 0px auto;
+	width: 1000px;
+
+}
+
+.apic img{
+	display: inline-block;
+	margin: 0px auto;
+}
+
+.nump{
+	background-color: #d3d8e5;
+	text-align: center;
+	padding: 3px 0px;
+	font-size: 12px;
+	color: gray;
+	font-style: italic;
+}
+
+.cont{
+	background-color: #a3d49c;
+	padding: 3px 0px;
+	text-align: center;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.pi{
+	margin: auto;
+  background-color: transparent;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.pi img{
+	margin: auto;
+  	max-width: 100%;
+  	max-height: 100%;
+}

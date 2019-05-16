@@ -1,0 +1,12 @@
+.firebaserc
+.firebase
+%RESOURCE_DIR%
+serviceAccountKey.json
+config.json
+node_modules
+credentials.json
+database-connect.js
+*.log
+firebase-token.json
+token.json
+config.js

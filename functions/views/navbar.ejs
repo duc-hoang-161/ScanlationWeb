@@ -1,0 +1,25 @@
+<%token = 'a8b4d3053dca265a73779f11f81e547b'%>
+<div class="default-sidebar">
+    <!-- Begin Side Navbar -->
+    <nav class="side-navbar box-scroll sidebar-scroll">
+        <!-- Begin Main Navigation -->
+        <span class="heading">Quản lí</span>
+        <ul class="list-unstyled">
+            <li><a href="#dropdown-db" aria-expanded="false" data-toggle="collapse"><i class="la la-columns"></i><span>Truyện</span></a>
+                <ul id="dropdown-db" class="collapse list-unstyled pt-0">
+                    <li><a href="/lists?t=<%=token%>">Danh sách</a></li>
+                    <li><a href="/adds?t=<%=token%>">Thêm mới</a></li>
+                </ul>
+            </li>
+            <li><a href="#dropdown-app" aria-expanded="false" data-toggle="collapse"><i class="la la-puzzle-piece"></i><span>Chương</span></a>
+                <ul id="dropdown-app" class="collapse list-unstyled pt-0">
+                    <li><a href="/listc?t=<%=token%>">Danh sách</a></li>
+                    <li><a href="/addc?t=<%=token%>">Thêm mới</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- End Main Navigation -->
+    </nav>
+    <!-- End Side Navbar -->
+</div>

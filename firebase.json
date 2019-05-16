@@ -1,0 +1,90 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "functions": {
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/app",
+        "function": "home"
+      },
+      {
+        "source": "/download",
+        "function": "download"
+      },
+      {
+        "source": "/download/*",
+        "function": "downloadViewStory"
+      },
+      {
+        "source": "/download/*/*",
+        "function": "downloadViewChap"
+      },
+      {
+        "source": "/read/*/*",
+        "function": "ViewChap"
+      },
+      {
+        "source": "/",
+        "function": "home"
+      },
+      {
+        "source": "/donate",
+        "function": "donate"
+      },
+      {
+        "source": "/about",
+        "function": "home"
+      },
+      {
+        "source": "/test",
+        "function": "test"
+      },
+      {
+        "source": "/shield",
+        "function": "shield"
+      },
+      {
+        "source": "/manastory",
+        "function": "manastory"
+      },
+      {
+        "source": "/snap",
+        "function": "logout"
+      },
+      {
+        "source": "blog.shieldmanga.icu/**",
+        "function": "download"
+      },
+      {
+        "source": "/listc",
+        "function": "listChapter"
+      },
+      {
+        "source": "/addc",
+        "function": "addChapter"
+      },
+      {
+        "source": "/lists",
+        "function": "listStory"
+      },
+      {
+        "source": "/adds",
+        "function": "addStory"
+      },
+      {
+        "source": "/upload",
+        "function": "uploadPhoto"
+      }
+
+    ]
+  }
+}

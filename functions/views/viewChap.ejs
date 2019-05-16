@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHIELD MANGA</title>
+	<base href="/" />
+	<link rel="shortcut icon" href="pic/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/gen.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<% include header %>
+	<div class="content">
+		<div class="container">
+			<h1 class="s-t bold"><%= title %></h1>
+			<div class="viewer">
+				<% row = 0%>
+				<% linksChap.forEach( function(link){  %>
+					<div class="aPage">
+						<div class="nump">
+							<%= ++row%>/<%= linksChap.length%>			
+						</div>
+						<div class="pi">
+							<img src="<%= link%>">
+						</div>
+					</div>
+				<% });%>
+				<div class="cont">The story continues... <i class="material-icons" style="font-size: 16px">arrow_forward</i></div>
+			</div>
+		</div>
+	</div>
+	
+	<% include footer %>
+	
+</body>
+</html>
